@@ -11,7 +11,7 @@ var uref = database.ref("users");
 uref.on("value", function (snapshot) {
   snapshot.forEach(function (childSnapshot) {
     var childData = childSnapshot.val();
-    console.log(childData);
+    //console.log(childData);
 
     var card = document.createElement("div");
     card.setAttribute("class", "o-card");
